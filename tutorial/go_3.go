@@ -1,3 +1,5 @@
+// type
+
 package main
 
 func main() {

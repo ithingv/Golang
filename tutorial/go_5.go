@@ -1,3 +1,5 @@
+// switch type
+
 switch v.(type) {
 case int:
 	println("int")

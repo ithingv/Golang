@@ -1,3 +1,5 @@
+// switch
+
 package main
 
 func grade(score int) {

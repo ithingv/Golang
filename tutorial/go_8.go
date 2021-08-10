@@ -1,3 +1,5 @@
+// continue, break, goto
+
 package main
 
 func main() {

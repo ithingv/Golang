@@ -1,3 +1,5 @@
+// switch - fallthrough
+
 package main
 
 import "fmt"
