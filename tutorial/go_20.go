@@ -8,5 +8,5 @@ func main() {
 	a = []int{1, 2, 3} // 슬라이스에 리터럴값 지정
 	a[1] = 10
 	println(a)     // [3/3]0xc00003a760 메모리 주소출력
-	fmt.Println(a) // [1, 10, 3] 출력
+	fmt.Println(a) // [1, 10, 3]
 }
