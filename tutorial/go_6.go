@@ -7,7 +7,6 @@ import "fmt"
 func main() {
 	check(2)
 }
-
 func check(val int) {
 	switch val {
 	case 1:
