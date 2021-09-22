@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"io/ioutil"
 	"math/rand"
+	"os"
 	"strings"
 	"time"
 )
@@ -54,6 +55,19 @@ func (p person) saveToFile(filename string) error {
 	return ioutil.WriteFile(filename, p.toByte(), 0666)
 }
 
+func newPersonFromFile(filename string) person {
+	byteSlice, err := ioutil.ReadFile(filename)
+	if err != nil {
+		// 옵션1 - log the error and return a call to newName()
+		// 옵션2 - log the error and entirely quit the program
+		fmt.Println("Error:", err)
+		os.Exit(1)
+	}
+
+	s := strings.Split(string(byteSlice), ", ")
+	return person(s)
+}
+
 func (p person) shuffle() {
 
 	source := rand.NewSource(time.Now().UnixNano()) // seed를 int64로 생성
@@ -63,8 +77,4 @@ func (p person) shuffle() {
 		newPos := r.Intn(len(p) - 1) // seed가 고정돼있음, type Source
 		p[i], p[newPos] = p[newPos], p[i]
 	}
-}
-
-func swap(p person, idx1 *int, idx2 *int) {
-
 }
