@@ -40,8 +40,11 @@ func main() {
 	person1.print()
 
 	// shortcut
-	lee.updateName("Lee")
-	lee.print()
+	// lee.updateName("Lee")
+	// lee.print()
+
+	// slice vs struct
+	// reference vs value types
 }
 
 // not working

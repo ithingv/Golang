@@ -8,4 +8,11 @@
 
 **func TestSaveToPersonandNewNameFromFile**
 
-    - 
+Testing File IO
+1. Delete any files in current working directory with the name "_nametesting"
+2. Create a Name
+3. Save to file
+4. Load from file
+5. Assert Name length
+6. Delete any files in current working directory with the name "_nametesting"
+   
