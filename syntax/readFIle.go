@@ -56,7 +56,7 @@ func (p person) saveToFile(filename string) error {
 func newPersonFromFile(filename string) person {
 	byteSlice, err := ioutil.ReadFile(filename)
 	if err != nil {
-		// 옵션1 - log the error and return a call to newName()
+		// 옵션1 - log the error and return a call to newName() 
 		// 옵션2 - log the error and entirely quit the program
 		fmt.Println("Error:", err)
 		os.Exit(1)
