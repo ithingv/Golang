@@ -1,4 +1,4 @@
-// Named return parameter에 리턴값을 할당
+// Named return parameter에 리턴값을 할당 
 package main
 
 func sum(nums ...int) (count int, total int) {
